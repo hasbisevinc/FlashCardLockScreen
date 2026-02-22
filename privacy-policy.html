@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy / Gizlilik Politikası</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0e0f11;
+      --border: #2a2b2f;
+      --text: #c8c9cc;
+      --text-dim: #6b6d75;
+      --heading: #edeef0;
+      --accent: #c8a97e;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.75;
+      font-size: 15px;
+      min-height: 100vh;
+    }
+
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(14, 15, 17, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .lang-btn {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text-dim);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      font-family: 'DM Sans', sans-serif;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn:hover {
+      color: var(--text);
+      border-color: #555;
+    }
+
+    .lang-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #0e0f11;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 56px 24px 80px;
+    }
+
+    .panel {
+      display: none;
+    }
+
+    .panel.active {
+      display: block;
+      animation: fadeIn 0.25s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: clamp(20px, 4vw, 26px);
+      color: var(--heading);
+      font-weight: 500;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      color: var(--text-dim);
+      margin-bottom: 40px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 16px;
+      color: var(--heading);
+      font-weight: 500;
+      margin: 36px 0 12px;
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      margin: 20px 0 8px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    strong {
+      color: var(--heading);
+      font-weight: 500;
+    }
+
+    ul {
+      list-style: disc;
+      margin: 8px 0 14px 20px;
+    }
+
+    ul li {
+      margin-bottom: 4px;
+    }
+
+    .controller {
+      margin-top: 8px;
+      line-height: 1.9;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 36px 16px 60px;
+      }
+
+      .lang-bar {
+        padding: 10px 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="lang-bar">
+    <button class="lang-btn active" onclick="setLang('tr')" id="btn-tr">Türkçe</button>
+    <button class="lang-btn" onclick="setLang('en')" id="btn-en">English</button>
+  </div>
+
+  <div class="container">
+
+    <!-- TÜRKÇE -->
+    <div class="panel active" id="panel-tr">
+      <h1>GİZLİLİK POLİTİKASI</h1>
+      <p class="subtitle"><strong>Son Güncelleme:</strong> 22 Şubat 2026<br>Bu Gizlilik Politikası, mobil uygulamanın
+        kullanımı sırasında işlenen verileri açıklamaktadır.</p>
+
+      <h2>1. Toplanan Veriler</h2>
+      <h3>1.1 Üyelik Sistemi</h3>
+      <p>Uygulama üyelik sistemi içermez. Kullanıcılardan ad, soyad, e-posta, yaş veya benzeri doğrudan kimlik bilgileri
+        talep edilmez.</p>
+      <h3>1.2 Cihazda Saklanan Veriler</h3>
+      <p>Aşağıdaki veriler yalnızca kullanıcının cihazında saklanır ve istatistik için:</p>
+      <ul>
+        <li>Seçilen öğrenme kategorileri</li>
+        <li>Tahmini günlük ekran süresi bilgisi</li>
+        <li>Kilitlenmesi seçilen uygulamalar</li>
+        <li>Kart bilme/bilmeme durumu</li>
+        <li>Öğrenme ilerleme verileri</li>
+        <li>Uygulama içi tercihler</li>
+      </ul>
+      <p>Bu veriler uygulamanın çalışması için cihaz üzerinde saklanır.
+        Bu verilerin bazıları, uygulama kullanımını analiz etmek ve geliştirmek amacıyla anonim veya takma ad
+        (pseudonymous) analiz verisi olarak Firebase Analytics’e event şeklinde aktarılabilir.</p>
+
+      <p>Kullanıcı dilediği zaman cihazında saklanan verileri uygulama içinden silebilir.</p>
+
+      <h2>2. Analitik ve Teknik Veriler</h2>
+      <p>Uygulamada <strong>Firebase</strong> servisleri kullanılmaktadır.</p>
+      <h3>2.1 Firebase Analytics</h3>
+      <p>Uygulama deneyimini geliştirmek, performansı analiz etmek ve kullanıcı davranışlarını anlamak amacıyla anonim
+        ve/veya takma ad (pseudonymous) analiz verileri toplanabilir.
+        Bu kapsamda uygulama içindeki ekran geçişleri, kullanıcı etkileşimleri, tercih seçimleri ve genel kullanım
+        davranışlarına ilişkin analiz verileri işlenebilir.</p>
+      <p>Firebase, uygulama örnek kimliği (App Instance ID) gibi cihaz bazlı benzersiz tanımlayıcılar oluşturabilir. Bu
+        tanımlayıcılar doğrudan kimlik tespiti amacıyla kullanılmaz.</p>
+      <h3>2.2 Crashlytics</h3>
+      <p>Uygulama hatalarının tespiti amacıyla teknik hata kayıtları (crash logları), cihaz modeli ve işletim sistemi
+        bilgileri toplanabilir.</p>
+
+      <h2>3. Hukuki Dayanak</h2>
+      <p>Veriler, uygulamanın güvenli şekilde çalışmasını sağlamak, performansını analiz etmek ve kullanıcı deneyimini
+        geliştirmek amacıyla KVKK’nın 5/2(f) maddesi uyarınca veri sorumlusunun meşru menfaati kapsamında işlenmektedir.
+        Teknik olarak zorunlu olan hata kayıtları ve performans verileri, hizmetin sağlanması için gerekli ölçüde
+        işlenir.</p>
+
+      <h2>4. Verilerin Aktarımı</h2>
+      <p>Analitik ve teknik veriler Google LLC tarafından sağlanan Firebase hizmetleri aracılığıyla yurtdışındaki
+        sunucularda işlenebilir.</p>
+
+      <h2>5. Saklama Süresi</h2>
+      <p>Yerel veriler kullanıcı tarafından silinene kadar cihazda tutulur. Analitik veriler ilgili servis sağlayıcının
+        veri saklama politikalarına tabidir.</p>
+
+      <h2>6. Kullanıcı Hakları</h2>
+      <p>Kullanıcılar yürürlükteki mevzuat kapsamında verilerine ilişkin bilgi talep etme, silme ve işlenmesine itiraz
+        etme haklarına sahiptir.</p>
+
+      <h2>7. Güncellemeler</h2>
+      <p>Bu politika zaman zaman güncellenebilir.</p>
+
+      <h2>8. Veri Sorumlusu</h2>
+      <div class="controller">
+        Ad Soyad / Şirket Ünvanı: Hasbi Sevinç<br>
+        E-posta: hasbi.sevinc@gmail.com<br>
+        Ülke: Türkiye
+      </div>
+    </div>
+
+    <!-- ENGLISH -->
+    <div class="panel" id="panel-en">
+      <h1>PRIVACY POLICY</h1>
+      <p class="subtitle"><strong>Last Updated:</strong> 22 February 2026<br>This Privacy Policy explains how data is
+        processed
+        when using the mobile application.</p>
+
+      <h2>1. Data We Do Not Collect</h2>
+      <p>The App does not require user registration and does not collect directly identifiable information such as name,
+        surname, email address, or age.</p>
+
+      <h2>2. Data Stored on Device</h2>
+      <p>The following data is stored locally on the user's device:</p>
+      <ul>
+        <li>Selected learning categories</li>
+        <li>Estimated daily screen time</li>
+        <li>Selected locked applications</li>
+        <li>Flashcard progress and learning status</li>
+        <li>In-app preferences</li>
+      </ul>
+      <p>This data is stored on the device to enable the core functionality of the App.
+        Some of this information may also be transmitted as anonymous or pseudonymous analytics events to Firebase
+        Analytics for the purpose of improving the App and analyzing usage patterns.</p>
+
+      <p>Users may delete locally stored data at any time through the application settings.</p>
+
+      <h2>3. Analytics and Technical Data</h2>
+      <h3>3.1 Firebase Analytics</h3>
+      <p>To improve the App, analyze performance, and better understand user behavior, anonymous and/or pseudonymous
+        analytics data may be collected.
+        This may include information related to screen transitions, user interactions, preference selections, and
+        general in-app usage behavior.</p>
+      <p>Firebase may generate device-based identifiers such as an App Instance ID. These identifiers do not directly
+        identify users.</p>
+      <h3>3.2 Crash Reporting</h3>
+      <p>Technical crash logs, device model, and operating system information may be collected to detect and fix
+        application errors.</p>
+
+      <h2>4. Legal Basis</h2>
+      <p>Data is processed under the legitimate interests of the data controller to ensure the secure operation of the
+        App, analyze performance, and improve user experience.
+        Technical data such as crash logs and performance metrics are processed to the extent necessary to provide and
+        maintain the service.</p>
+
+      <h2>5. International Data Transfers</h2>
+      <p>Analytics and technical data may be processed on servers operated by Google LLC outside the user's country of
+        residence.</p>
+
+      <h2>6. Data Retention</h2>
+      <p>Local data remains on the device until deleted by the user. Analytics data retention is subject to Firebase
+        policies.</p>
+
+      <h2>7. User Rights</h2>
+      <p>Users may request information regarding data processing, request deletion, or object to processing under
+        applicable laws.</p>
+
+      <h2>8. Data Controller</h2>
+      <div class="controller">
+        Name / Company: Hasbi Sevinç<br>
+        Email: hasbi.sevinc@gmail.com<br>
+        Country: Turkey
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      document.getElementById('panel-' + lang).classList.add('active');
+      document.getElementById('btn-' + lang).classList.add('active');
+      document.documentElement.lang = lang;
+    }
+
+    const supported = ['tr', 'en'];
+    const browserLang = (navigator.language || navigator.userLanguage || 'en').split('-')[0].toLowerCase();
+    const defaultLang = supported.includes(browserLang) ? browserLang : 'en';
+    setLang(defaultLang);
+  </script>
+</body>
+
+</html>
